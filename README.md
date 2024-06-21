@@ -76,3 +76,15 @@
         ![풀다운스위치](https://raw.githubusercontent.com/hyeily0627/Basic-RPi-2024/main/images/009.png)
 
         ![총정리](https://raw.githubusercontent.com/hyeily0627/Basic-RPi-2024/main/images/010.png)
+
+------ 오후수업 조퇴 -------
+
+## day02 
+- 적외선 센서 연결 
+
+- 가상환경 만들기 
+  - python -m venv 가상환경이름
+  - source ./env/bin/activate
+  - 그러면 기존 pi@raspi:~/Documents/GitHub/Basic-RasPi-2024/day02 $ 
+  가상환경은 (env) pi@raspi:~/Documents/GitHub/Basic-RasPi-2024/day02 $ 로 뜸 (env가 내가 설정한 이름)
+  - 빠져나오기 : deactivate
