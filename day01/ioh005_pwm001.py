@@ -16,7 +16,7 @@ Buzz = GPIO.PWM(piezoPin, 440)
 
 try:
 	while True:
-		Buzz.start(50)	# duty cycle: 50(50%의 시간을 주면서 동작시키겠다)
+		Buzz.start(20)	# duty cycle: 50(50%의 시간을 주면서 동작시키겠다)
 		for i in range(0, len(melody)):
 			Buzz.ChangeFrequency(melody[i])
 			time.sleep(0.3)
