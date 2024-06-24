@@ -170,3 +170,6 @@ app.run(host="0.0.0.0", debug=True) #실행을 위한 명령문으로 보면 된
     ![웹구동코드수정](https://raw.githubusercontent.com/hyeily0627/Basic-RPi-2024/main/images/014.png)
 
 - 정적 라우팅(flask02.py)
+
+https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/6c54d3af-81ff-4fad-81b5-710b272e7f5e
+
