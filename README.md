@@ -96,8 +96,31 @@
   가상환경은 (env) pi@raspi:~/Documents/GitHub/Basic-RasPi-2024/day02 $ 로 뜸 (env가 내가 설정한 이름)
   - 빠져나오기 : deactivate
 
+- 라즈베리파이 GPIO 확인
+    - putty 명령창에 sudo git clone https://github.com/WiringPi/WiringPi 입력하여 WiringPi 복사
+    - WirionPi 경로로 들어가서 ls입력후 build 확인
+    - sudo ./build 입력 후 설치
+    - gpio readall 입력으로 확인
+
 - 거리 센서 
   - 거리에 따른 출력 값 
+  - 초음파 센서 + 부저 mix 
+    ```python
+        try:
+            while True:
+                distance = measure()
+                if distance <= 5:
+                    Buzz.start(50)
+                    for i in range(0, len(melody)) :
+                        Buzz.ChangeFrequency(melody[i])
+                        time.sleep(0.3)
+                    Buzz.stop()
+                    print("Distance is 5cm under!! : %.2f cm" %distance)
+                    time.sleep(1)
+                else:
+                    print("Distance: %.2f cm" %distance)
+    ```
+
 
   ## day03
   - 자동제어 
