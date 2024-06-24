@@ -171,5 +171,30 @@ app.run(host="0.0.0.0", debug=True) #실행을 위한 명령문으로 보면 된
 
 - 정적 라우팅(flask02.py)
 
-https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/6c54d3af-81ff-4fad-81b5-710b272e7f5e
+  https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/6c54d3af-81ff-4fad-81b5-710b272e7f5e
+
+- 불 켜고 끄기 (flask03.py / flask04.py)
+  - URL 접속을 /led/on, /led/off 로 접속하면 led를 on, off 할 수 있는 웹페이지를 만들어보기 
+
+- 클라이언트 - 서버 - 데이터 (데이터 값 주기)
+  - get 방식 
+  ```python
+  from flask import Flask, request
+ 
+  app = Flask(__name__)
+ 
+  @app.route("/")
+  def get():
+    value1 = request.args.get("이름","user")
+    value2 = request.args.get("주소","부산")
+    return value1 + ":" + value2
+
+
+  if __name__ == "__main__":
+    app.run(host="0.0.0.0", port="10111", debug=True)
+  ```
+  ![기본](https://raw.githubusercontent.com/hyeily0627/Basic-RPi-2024/main/images/015.png)
+
+  ![사용](https://raw.githubusercontent.com/hyeily0627/Basic-RPi-2024/main/images/016.png)
+
 
