@@ -139,7 +139,9 @@
   ![스텝모듈](https://raw.githubusercontent.com/hyeily0627/Basic-RPi-2024/main/images/001.gif)
 
   - 위 그림은 스텝 모터의 구동 원리를 설명하는 그림입니다. 회전체에는 여러 개의 자석이 반대되는 극성 순서로 달려있습니다. 고정체에는 전자석이 90도 간격으로 있습니다. 180도 떨어진 전자석 2개가 한 쌍으로 다른 방향에 전류가 들어왔다가 다시 90도 떨어진 전자석으로 전류가 들어갑니다. 고정체의 전자석의 극에 따라 회전체의 자석이 끌리면서 회전하게 됩니다.
-  
-  
+
+  https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/cdb39ff6-41e2-4cf9-a3f6-cfdba8eb791a
+
+
 
 
