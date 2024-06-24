@@ -141,5 +141,32 @@
   https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/cdb39ff6-41e2-4cf9-a3f6-cfdba8eb791a
 
 
+- 가상환경 옵션주기
+  - python -m venv --system-site-packages env
+  - 접속 source ./env/bin/activate 
+  - 이 경우 pip list 하면 모든 라이브러리들이 들어와있는 것을 확인 가능 
 
+- 파이썬 기초적인 웹 구동 코드 (flask01.py)
+```python
+from flask import Flask  #name이름을 통한 flask객체 생성 
+ 
+app = Flask(__name__)@@
 
+@app.route("/")          #라우팅을 위한 뷰 함수 등록 
+def hello():
+  return "hello world"
+
+if __name__ == "__main__":  #터미널에서 직접 실행시키면 실행파일이 main으로 바뀐다 
+app.run(host="0.0.0.0", debug=True) #실행을 위한 명령문으로 보면 된다 
+```
+  - 구동시 터미널
+    ![웹구동](https://raw.githubusercontent.com/hyeily0627/Basic-RPi-2024/main/images/013.png)
+
+    - 접속시 아래와 같이 확인 가능 
+    192.168.5.2 - - [24/Jun/2024 14:26:48] "GET / HTTP/1.1" 200 -
+    - 포트번호 변경가능 
+    app.run(host="0.0.0.0", port="10123", debug=True)
+    - 터미널 구동시 코드 수정하면?
+    ![웹구동코드수정](https://raw.githubusercontent.com/hyeily0627/Basic-RPi-2024/main/images/014.png)
+
+- 정적 라우팅(flask02.py)
