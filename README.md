@@ -128,4 +128,9 @@
   
   ![릴레이](https://raw.githubusercontent.com/hyeily0627/Basic-RPi-2024/main/images/011.png)
 
+
+https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/41b95337-f0be-406a-8867-b5bcad40999b
+
+
+
   
