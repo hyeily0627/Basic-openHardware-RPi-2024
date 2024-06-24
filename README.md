@@ -77,10 +77,17 @@
 
         ![총정리](https://raw.githubusercontent.com/hyeily0627/Basic-RPi-2024/main/images/010.png)
 
------- 오후수업 조퇴 -------
+- 인터럽트(interrupt)
+    - 우선순위
+
+- 부저 실습
+    - 음계, 주파수
+
+    ![부저](https://raw.githubusercontent.com/hyeily0627/Basic-RPi-2024/main/images/001.jpg)
 
 ## day02 
 - 적외선 센서 연결 
+  - 앞에 인지 되면 출력 
 
 - 가상환경 만들기 
   - python -m venv 가상환경이름
@@ -88,3 +95,9 @@
   - 그러면 기존 pi@raspi:~/Documents/GitHub/Basic-RasPi-2024/day02 $ 
   가상환경은 (env) pi@raspi:~/Documents/GitHub/Basic-RasPi-2024/day02 $ 로 뜸 (env가 내가 설정한 이름)
   - 빠져나오기 : deactivate
+
+- 거리 센서 
+  - 거리에 따른 출력 값 
+
+  ## day03
+  - 자동제어 
