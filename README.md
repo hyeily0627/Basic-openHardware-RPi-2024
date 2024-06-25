@@ -198,3 +198,12 @@ app.run(host="0.0.0.0", debug=True) #실행을 위한 명령문으로 보면 된
   ![사용](https://raw.githubusercontent.com/hyeily0627/Basic-RPi-2024/main/images/016.png)
 
 
+## day04 
+- LED 불켜기 심화 
+  - flask06.py : html에 작성 및 버튼형 구현 
+
+
+  - flask07.py : html에 작성 및 레드, 블루, 그린 각각 불켜짐 버튼 구현 
+    - 아예 꺼짐 미작동... 색상이 들어오는 현상 
+
+    ![flask07.py](https://raw.githubusercontent.com/hyeily0627/Basic-RPi-2024/main/images/018.png)
