@@ -229,5 +229,9 @@ https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/83bf3
 
   - cam03.py(인제), cam04.py(근아)  : 스위치 버튼을 누를시 사진 찍기 및 찍은 시간 출력 
   
-  https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/fffbc631-c433-47a6-a9e6-508ddabc2bd6
+ 
+
+https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/4ca595a7-80d8-4d0e-acb1-eb1ac1a19091
+
+
 
