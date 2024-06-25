@@ -208,3 +208,23 @@ https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/83bf3
     - 아예 꺼짐 미작동... 색상이 들어오는 현상 
 
     ![flask07.py](https://raw.githubusercontent.com/hyeily0627/Basic-RPi-2024/main/images/018.png)
+
+  - templates 폴더 / index 및 day04 / flask08.py
+    
+- CAM 활용하기 
+  - cam01.py : 실행시 사진 찍기 
+  ```python
+    from picamera2 import Picamera2
+    import time
+
+    picam2 = Picamera2()
+    camera_config = picam2.create_preview_configuration()
+    picam2.configure(camera_config)
+    picam2.start()
+    time.sleep(2)
+    picam2.capture_file("test1.jpg")
+  ```
+
+  ![cam01.py](https://raw.githubusercontent.com/hyeily0627/Basic-RPi-2024/main/images/019.png)
+
+  - cam03.py(인제), cam04.py(근아)  : 버튼을 누를시 사진 찍기 및 찍은 시간 출력 
