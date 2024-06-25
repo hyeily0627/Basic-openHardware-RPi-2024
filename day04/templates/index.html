@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LED Control</title>
+    <script>
+   		function controlLED(action) {
+   			fetch("/" + action)
+   				.then(response => response.text())
+                .then(data => {
+                    document.getElementById("status").innerText = data;
+                });
+        }
+    </script>
+</head>
+<body>
+    <h1>LED Control</h1>
+    <button onclick="controlLED('on')">Turn On</button>
+    <button onclick="controlLED('off')">Turn Off</button>
+    <p id="status">LED 상태: 알 수 없음</p>
+</body>
+</html>

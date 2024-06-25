@@ -9,6 +9,7 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(led, GPIO.OUT)
 GPIO.output(led, True) # 꺼진 상태
 
+# html 템플릿 
 html_template = """
 <!DOCTYPE html>
 <html>
@@ -40,12 +41,12 @@ def home():
 @app.route("/on")
 def led_on():
     GPIO.output(led, False)
-    return "불 켜져요🚨"
+    return "불 켜짐 상태🚨"
 
 @app.route("/off")
 def led_off():
     GPIO.output(led, True)
-    return "불 꺼졌어요"
+    return "불 꺼짐 상태"
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=10111, debug=True)
