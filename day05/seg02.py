@@ -3,7 +3,7 @@
 import RPi.GPIO as GPIO
 import time
 
-led = [21, 22, 23, 24, 25, 6, 12]
+led = [13, 26, 19, 20, 21, 22, 12]
 GPIO.setmode(GPIO.BCM)
 
 for ledPin in led:
