@@ -259,13 +259,21 @@ https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/83bf3
 
 - seg04.py : 0 ~ 9까지의 숫자를 스위치를 눌렀을때 뜨도록 하기 (순차적으로)
 
+  https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/3b0dd8bc-641d-4134-b1f9-ea5aff745085
+
 - seg05.py : 코드 실행시 패널에 0 ~ 9999 순차적으로 진행
 
-  https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/3b0dd8bc-641d-4134-b1f9-ea5aff745085
+
+https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/a2c3a442-731e-4ead-8ab5-8d4a19b24277
+
+
 
 - seg06.py : 실행시 1234가 뜨도록 하기 (스위치 사용해서는 왜 안될까용?)
   - seg06_01.py : 스위치를 누를때만 1234가 뜨도록 함 
 
-  https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/52f04467-015c-4a29-a48f-c7feb99dc346
+
+https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/7b920bca-1a98-497b-a0a3-763f4eb1f6bc
+
+
 
 - seg07.py : 스위치 사용시 0부터 9999까지 순차 증가 
