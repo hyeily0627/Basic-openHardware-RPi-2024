@@ -261,4 +261,6 @@ https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/83bf3
 
 https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/3b0dd8bc-641d-4134-b1f9-ea5aff745085
 
-- seg05.py : 패널에 4자리 숫자 모두 띄우기(일단은 1234)
+- seg05.py : 패널에 0 ~ 9999 순차적으로 진행 
+
+- seg06.py : 스위치를 눌렀을때 1234가 뜨도록 하기 
