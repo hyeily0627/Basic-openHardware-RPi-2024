@@ -1,8 +1,9 @@
 import RPi.GPIO as GPIO
 import time
 
-segment_pins = [24, 5, 6, 12, 13, 16, 17]
-digit_pins = [20, 21, 22, 23]
+segment_pins = [4, 5, 6, 12, 13, 16, 17]
+
+digit_pins =  [20, 21, 22, 23]
 
 segment_patterns = [
     [1, 1, 1, 1, 1, 1, 0],  # 0
@@ -22,7 +23,7 @@ def setup():
     GPIO.setwarnings(False)
     for pin in segment_pins:
         GPIO.setup(pin, GPIO.OUT)
-    for pin in digit_ins:
+    for pin in digit_pins:
         GPIO.setup(pin, GPIO.OUT)
         GPIO.output(pin, GPIO.HIGH)  
 
@@ -35,6 +36,7 @@ def display_number(number):
             GPIO.output(pin, state)
         time.sleep(0.005) 
         GPIO.output(digit_pins[i], GPIO.HIGH)  
+
 def main():
     setup()
     try:
@@ -49,3 +51,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
