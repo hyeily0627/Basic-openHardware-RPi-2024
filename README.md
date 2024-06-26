@@ -264,5 +264,6 @@ https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/3b0dd
 - seg05.py : 패널에 0 ~ 9999 순차적으로 진행 
 
 - seg06.py : 실행시 1234가 뜨도록 하기 (스위치 사용해서는 왜 안될까용?)
+  - seg06_01.py : 스위치를 누를때만 1234가 뜨도록 함 
 
 - seg07.py : 스위치 사용시 0부터 9999까지 순차 증가 
