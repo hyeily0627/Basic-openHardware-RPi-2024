@@ -277,3 +277,7 @@ https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/83bf3
 
 
 - seg07.py : 스위치 사용시 0부터 9999까지 순차 증가 
+
+
+  https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/7f640904-123d-414a-8a9a-64d3a08b6b18
+
