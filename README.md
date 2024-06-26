@@ -259,7 +259,7 @@ https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/83bf3
 
 - seg04.py : 0 ~ 9까지의 숫자를 스위치를 눌렀을때 뜨도록 하기 (순차적으로)
 
-- seg05.py : 패널에 0 ~ 9999 순차적으로 진행 
+- seg05.py : 코드 실행시 패널에 0 ~ 9999 순차적으로 진행
 
   https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/3b0dd8bc-641d-4134-b1f9-ea5aff745085
 
