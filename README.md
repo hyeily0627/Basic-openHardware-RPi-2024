@@ -264,7 +264,7 @@ https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/83bf3
 - seg05.py : 코드 실행시 패널에 0 ~ 9999 순차적으로 진행
 
 
-https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/a2c3a442-731e-4ead-8ab5-8d4a19b24277
+  https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/a2c3a442-731e-4ead-8ab5-8d4a19b24277
 
 
 
@@ -272,7 +272,7 @@ https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/a2c3a
   - seg06_01.py : 스위치를 누를때만 1234가 뜨도록 함 
 
 
-https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/7b920bca-1a98-497b-a0a3-763f4eb1f6bc
+  https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/7b920bca-1a98-497b-a0a3-763f4eb1f6bc
 
 
 
