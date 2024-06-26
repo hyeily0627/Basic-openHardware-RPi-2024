@@ -257,7 +257,8 @@ https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/83bf3
 ## day05
 - seg02.py : 01 코드를 좀 더 쉽게 구현? 나름..? 
 
-- seg03.py : 0 ~ 9까지의 숫자를 스위치를 눌렀을때 뜨도록 하기 (순차적으로)
+- seg04.py : 0 ~ 9까지의 숫자를 스위치를 눌렀을때 뜨도록 하기 (순차적으로)
 
 https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/3b0dd8bc-641d-4134-b1f9-ea5aff745085
 
+- seg05.py : 패널에 4자리 숫자 모두 띄우기(일단은 1234)
