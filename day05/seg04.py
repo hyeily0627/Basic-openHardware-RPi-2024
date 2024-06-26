@@ -1,43 +1,54 @@
 import RPi.GPIO as GPIO
 import time
 
-switch = 4
-led = [13, 26, 19, 20, 21, 22, 12]
+segment_pins = [13, 26, 19, 20, 21, 22, 12]
+button = 4
 
-# GPIO 설정
-GPIO.setmode(GPIO.BCM)
-GPIO.cleanup()
+segment_patterns = [
+    [0, 0, 0, 0, 0, 0, 0],  # 0
+    [0, 1, 1, 0, 0, 0, 0],  # 1
+    [1, 1, 0, 1, 1, 0, 1],  # 2
+    [1, 1, 1, 1, 0, 0, 1],  # 3
+    [0, 1, 1, 0, 0, 1, 1],  # 4
+    [1, 0, 1, 1, 0, 1, 1],  # 5
+    [0, 0, 1, 1, 1, 1, 1],  # 6
+    [1, 1, 1, 0, 0, 1, 0],  # 7
+    [1, 1, 1, 1, 1, 1, 1],  # 8
+    [1, 1, 1, 0, 0, 1, 1]   # 9
+]
 
-GPIO.setup(switch, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+def setup():
+    GPIO.setmode(GPIO.BCM)
+    for pin in segment_pins:
+        GPIO.setup(pin, GPIO.OUT)
+    GPIO.setup(button,GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 
-led = [13, 26, 19, 20, 21, 22, 12]
+def display_number(number):
+    pattern = segment_patterns[number]
+    for pin, state in zip(segment_pins, pattern):
+        GPIO.output(pin, state)
 
-for ledPin in led:
-    GPIO.setup(ledPin, GPIO.OUT)
-    GPIO.output(ledPin, False)  # LED를 끄고 시작
+def main():
+    try:
+        setup()
+        current_number=0
+        display_number(current_number)
+        last_button_state = GPIO.input(button)
+        while True:
+            button_state = GPIO.input(button)
+            if GPIO.input(button) == GPIO.HIGH and last_button_state == GPIO.LOW:
+                current_number = (current_number + 1) % 10  # Increment and wrap around after 9
+                display_number(current_number)
+                print(f"Displayed number: {current_number}")
+                time.sleep(0.5)
+            last_button_state = button_state
+            time.sleep(0.001)
+    except KeyboardInterrupt:
+        print("")
+    finally:
+        GPIO.cleanup()
 
-num = [[0, 1, 1, 0, 0, 0, 0], [1, 1, 0, 1, 1, 0, 1], [1, 1, 1, 1, 0, 0, 1],
-       [0, 1, 1, 0, 0, 1, 1], [1, 0, 1, 1, 0, 1, 1], [1, 0, 1, 1, 1, 1, 1],
-       [1, 1, 1, 0, 0, 1, 0], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 0, 1, 1]]
-
-current_num = 0
-
-def button_callback(channel):
-    global current_num
-    current_num = (current_num + 1) % len(num)  # 숫자 증가 및 순환
-
-try:
-    # 이벤트 감지 설정
-    GPIO.add_event_detect(switch, GPIO.FALLING, callback=button_callback, bouncetime=300)
-    while True:
-        for pin in range(7):
-            GPIO.output(led[pin], num[current_num][pin])
-        time.sleep(0.1)  # 루프 딜레이
-
-except RuntimeError as e:
-    print(f"RuntimeError: {e}")
-    GPIO.cleanup()
-
-except KeyboardInterrupt:
-    GPIO.cleanup()
+if __name__ == '__main__':
+    main()
+        
 
