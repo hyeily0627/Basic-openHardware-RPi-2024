@@ -3,7 +3,7 @@ import RPi.GPIO as GPIO
 import time
 import datetime
 
-swPin =  22
+swPin = 26
 
 oldSw = 0
 newSw = 0
