@@ -228,10 +228,26 @@ https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/83bf3
   ![cam01.py](https://raw.githubusercontent.com/hyeily0627/Basic-RPi-2024/main/images/019.png)
 
   - cam03.py(인제), cam04.py(근아)  : 스위치 버튼을 누를시 사진 찍기 및 찍은 시간 출력 
-  
- 
 
-https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/4ca595a7-80d8-4d0e-acb1-eb1ac1a19091
+  ![스위치연결](https://raw.githubusercontent.com/hyeily0627/Basic-RPi-2024/main/images/002.jpg)
 
+  https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/4ca595a7-80d8-4d0e-acb1-eb1ac1a19091
 
+- 4Digit 7세그먼트 구조와 외형
+  ![4Digit](https://raw.githubusercontent.com/hyeily0627/Basic-RPi-2024/main/images/020.png)
 
+  - 예를 들어 2를 표시하고 싶으면 a b g e d 를 사용 
+  - 총 4개의 숫자의 불을 켜는 방법은 
+  첫번째 번호 COM1, 두번째 번호 COM2 ...
+
+  1. 4-digit 규격의 공통 음극(Common Cathod)방식 
+    - 그림 (a)는 4-digit 규격의 공통 음극 방식 7세그먼트의 핀 번호와 핀 이름을 나타내고 있습니다. 공통 단자인 COM1,2,3,4에 모두 마이너스(-) 신호를 가하고, 데이터 신호인 a~g, dp에 모두 플러스(+) 신호를 가하면 모든 7세그먼트는 켜지게 됩니다. 이때 데이터 신호(a~g,dp)중에 하나라도 마이너스(-) 신호로 바뀌면 해당 세그먼트(공통으로 묶인 4개)는 꺼집니다.
+
+  ![공통 음극](https://raw.githubusercontent.com/hyeily0627/Basic-RPi-2024/main/images/021.png)
+
+  2.  4-digit 규격의 공통 양극(Common Anode)방식
+    - 그림 (b)는 4-digit 규격의 공통 양극 방식 7세그먼트의 핀 번호와 핀 이름을 나타내고 있습니다. 공통 단자인 COM1,2,3,4에 모두 플러스(+) 신호를 가하고, 데이터 신호인 a~g, dp에 모두 마이너스(-) 신호를 가하면 모든 7세그먼트는 켜지게 됩니다. 이때 데이터 신호(a~g,dp)중에 하나라도 플러스(+) 신호로 바뀌면 해당 세그먼트(공통으로 묶인 4개)는 꺼집니다.
+
+  ![공통 양극](https://raw.githubusercontent.com/hyeily0627/Basic-RPi-2024/main/images/021.png)
+
+  ![표준디스플레이모양](https://raw.githubusercontent.com/hyeily0627/Basic-RPi-2024/main/images/022.png)
