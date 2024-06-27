@@ -283,3 +283,62 @@ https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/83bf3
 
 - seg08.py : 입력한 숫자를 4자리 패널에 뜨게 하기 (0~9999)
 
+# day06
+- 저항 제거 후 코드 설정
+  - fnd01.py : 기본 코드 / COM1에 0만 들어오게 하기 
+    ```python
+    def fndOut(): # 하나의 숫자 형태를 만드는 함수
+    for i in range(0,7):
+    # 예를 들어 1을 띄우고 싶다면 원리는 아래와 같음
+    #GPIO.output(fndSegs[0],0)
+    #GPIO.output(fndSegs[1],1)
+    #GPIO.output(fndSegs[2],1)
+    #GPIO.output(fndSegs[3],0)
+    GPIO.output(fndSegs[i], fndDatas[0] & (0x01 << i))
+    try:
+      while True:
+        for i in range(0,2):
+          GPIO.output(fndSels[i], 0) 
+    for j in range(0,10):
+        fndOut()
+        time.sleep(0.5)
+    ```
+
+  - fnd01_1.py : COM1에 1~9까지 숫자 뜨게 하기  
+    ```python
+    def fndOut(data): # 하나의 숫자 형태를 만드는 함수
+      for i in range(0,7):
+
+    try:
+      while True:
+        for i in range(0,1):
+          GPIO.output(fndSels[i], 0)  #fnd 선택
+
+        for j in range(0,10):
+          fndOut(j)
+          time.sleep(0.5)
+    ```
+
+  - fnd02.py : C0M1 1~9 돈 후 COM2도 1~9가 진행 
+    ```python
+    def fndOut(data): # 하나의 숫자 형태를 만드는 함수
+      for i in range(0,7):
+
+    try:
+      while True:
+        for i in range(0,1): # range 범위를 2로 설정시에 COM1에서 1~9 켜진뒤에 COM2로 넘어가서 두자리 숫자가 뜸
+          GPIO.output(fndSels[i], 0)  #fnd 선택
+
+        for j in range(0,10):
+          fndOut(j)
+          time.sleep(0.5)
+    ```
+
+  - fnd03.py : 2자리 뜨도록 진행 
+
+  - fnd04.py : 4자리 뜨도록 진행 (0~9999)까지 
+    - 다 돌고 나면 에러 (오버플로우 제어 필요)
+  
+  - fnd05.py : 에러 수정! 
+  
+
