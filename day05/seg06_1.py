@@ -3,7 +3,7 @@ import time
 
 segment_pins = [4, 5, 6, 12, 13, 16, 17]
 digit_pins = [20, 21, 22, 23]
-switch_pin = 16
+switch_pin = 25
 
 segment_patterns = [
     [1, 1, 1, 1, 1, 1, 0],  # 0
