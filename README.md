@@ -1,9 +1,7 @@
 # Basic-RPi-2024
 부경대학교 2024 IoT 개발자 과정 - 라즈베리파이 학습 리포지토리 (안성주 T)
 
-# Basic-RasPi-2024
-
-## day01 
+# day01 
 - 라즈베리파이 개념
 
   ![구조](https://raw.githubusercontent.com/hyeily0627/Basic-RPi-2024/main/images/001.png)
@@ -85,7 +83,7 @@
 
     ![부저](https://raw.githubusercontent.com/hyeily0627/Basic-RPi-2024/main/images/001.jpg)
 
-## day02 
+# day02 
 - 적외선 센서 연결 
   - 앞에 인지 되면 출력 
 
@@ -122,7 +120,7 @@
     ```
 
 
-  ## day03
+# day03
   - 릴레이 모듈(자동제어)
     - 릴레이는 전자석의 원리와 전자기유도원리를 이용하여 전류를 흐르게 하거나 차단하는 장치이다. 쉽게 말해서 전류의 흐름을 제어하는 장치
   
@@ -198,7 +196,7 @@ app.run(host="0.0.0.0", debug=True) #실행을 위한 명령문으로 보면 된
   ![사용](https://raw.githubusercontent.com/hyeily0627/Basic-RPi-2024/main/images/016.png)
 
 
-## day04 
+# day04 
 - LED 불켜기 심화 
   - flask06.py : html에 작성 및 버튼형 구현 
 
@@ -254,7 +252,7 @@ https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/83bf3
 
 - seg01.py: 0 ~ 9까지의 숫자를 순차적으로 뜨게 하기
 
-## day05
+# day05
 - seg02.py : 01 코드를 좀 더 쉽게 구현? 나름..? 
 
 - seg04.py : 0 ~ 9까지의 숫자를 스위치를 눌렀을때 뜨도록 하기 (순차적으로)
@@ -262,6 +260,7 @@ https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/83bf3
   https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/3b0dd8bc-641d-4134-b1f9-ea5aff745085
 
 - seg05.py : 코드 실행시 패널에 0 ~ 9999 순차적으로 진행
+  - seg05_01.py : 코드 더 깔끔하게! 
 
 
   https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/a2c3a442-731e-4ead-8ab5-8d4a19b24277
@@ -280,4 +279,7 @@ https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/83bf3
 
 
   https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/7f640904-123d-414a-8a9a-64d3a08b6b18
+
+
+- seg08.py : 입력한 숫자를 4자리 패널에 뜨게 하기 (0~9999)
 
