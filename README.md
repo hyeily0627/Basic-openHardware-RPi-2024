@@ -343,3 +343,7 @@ https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/83bf3
 
 https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/39380d90-00fe-4dcb-b376-b92dfdb78013
 
+
+- Qutty 사용 
+  - vncserver-virtual로 vnc 서버 접속
+  - sudo apt install qttools5-dev-tools : Qt 도구 설치 
