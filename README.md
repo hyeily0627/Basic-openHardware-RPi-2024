@@ -339,6 +339,7 @@ https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/83bf3
   - fnd04.py : 4자리 뜨도록 진행 (0~9999)까지 
     - 다 돌고 나면 에러 (오버플로우 제어 필요)
   
-  - fnd05.py : 에러 수정! 
-  
+  - fnd05.py : 에러 수정!
+
+https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/39380d90-00fe-4dcb-b376-b92dfdb78013
 
