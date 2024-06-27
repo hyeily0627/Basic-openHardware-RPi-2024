@@ -15,24 +15,17 @@ for fndSel in fndSels:
 	GPIO.setup(fndSel, GPIO.OUT)
 	GPIO.output(fndSel, 1)
 
-def fndOut(): # 하나의 숫자 형태를 만드는 함수 
+def fndOut(data): # 하나의 숫자 형태를 만드는 함수 
 	for i in range(0,7):
-		# 예를 들어 1을 띄우고 싶다면 원리는 아래와 같음
-		#GPIO.output(fndSegs[0],0)
-		#GPIO.output(fndSegs[1],1)
-		#GPIO.output(fndSegs[2],1)
-		#GPIO.output(fndSegs[3],0)
-		GPIO.output(fndSegs[i], fndDatas[0] & (0x01 << i))
-
+		GPIO.output(fndSegs[i], fndDatas[data] & (0x01 << i))
+		
 try:
 	while True:
 		for i in range(0,1):
 			GPIO.output(fndSels[i], 0) 	#fnd 선택
-			#GPIO.output(5,1) 5,6을 켜서 1만 뜨는 지 확인했음! 
-			#GPIO.output(6,1)
 
 			for j in range(0,10):
-				fndOut()
+				fndOut(j)
 				time.sleep(0.5)
 
 except KeyboardInterrupt:
