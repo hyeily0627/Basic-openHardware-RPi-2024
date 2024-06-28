@@ -2,20 +2,18 @@ from PyQt5.QtWidgets import *
 from PyQt5 import uic
 import sys
 import RPi.GPIO as GPIO
+import os
 
-form_class = uic.loadUiType("./ledcontrol.ui")[0]
+# 권한 조정 (스크립트를 실행하는 사용자가 sudo 권한이 있는 경우)
+try:
+    os.chmod('/run/user/1000', 0o700)
+except PermissionError as e:
+    print(f"PermissionError: {e}")
 
-         # GPIO 핀 번호 설정
-         self.red_pin = 19
-         self.green_pin = 13
-         self.blue_pin = 6
-
-
-
-class WindowClass(QMainWindow, form_class):
+class WindowClass(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setupUi(self)
+        uic.loadUi("./ledcontrol.ui", self)
 
         # GPIO 핀 번호 설정
         self.red_pin = 19
@@ -57,6 +55,10 @@ class WindowClass(QMainWindow, form_class):
         GPIO.output(self.red_pin, False)
         GPIO.output(self.green_pin, True)
         GPIO.output(self.blue_pin, False)
+
+    def closeEvent(self, event):
+        GPIO.cleanup()
+        event.accept()
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
