@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="btnOn">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>240</y>
+      <width>99</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>LED ON</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnOff">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>240</y>
+      <width>99</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>LED OFF</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnRed">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>240</y>
+      <width>99</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>RED</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnBlue">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>240</y>
+      <width>99</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>BLUE</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnGreen">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>240</y>
+      <width>99</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>GREEN</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnWhite">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>240</y>
+      <width>99</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>WHITE</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btnOn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>btnOn()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>91</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>90</x>
+     <y>415</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnOff</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>btnOff()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>213</x>
+     <y>259</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>213</x>
+     <y>407</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnRed</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>btnRed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>338</x>
+     <y>258</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>346</x>
+     <y>417</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnBlue</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>btnBlue()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>452</x>
+     <y>263</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>429</x>
+     <y>116</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnGreen</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>btnGreen()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>564</x>
+     <y>259</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>550</x>
+     <y>111</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnWhite</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>btnWhite()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>691</x>
+     <y>251</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>682</x>
+     <y>142</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>btnOn()</slot>
+  <slot>btnOff()</slot>
+  <slot>btnRed()</slot>
+  <slot>btnBlue()</slot>
+  <slot>btnGreen()</slot>
+  <slot>btnWhite()</slot>
+ </slots>
+</ui>
