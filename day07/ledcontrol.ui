@@ -140,5 +140,76 @@ p, li { white-space: pre-wrap; }
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>BtnOn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>BtnOn()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>251</x>
+     <y>109</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>256</x>
+     <y>65</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>BtnRed</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>BtnRed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>72</x>
+     <y>213</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>62</x>
+     <y>417</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>BtnBlue</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>BtnBlue()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>165</x>
+     <y>214</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>167</x>
+     <y>412</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>BtnGreen</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>BtnGreen()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>225</x>
+     <y>210</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>239</x>
+     <y>353</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>BtnOn()</slot>
+  <slot>BtnRed()</slot>
+  <slot>BtnBlue()</slot>
+  <slot>BtnGreen()</slot>
+ </slots>
 </ui>
