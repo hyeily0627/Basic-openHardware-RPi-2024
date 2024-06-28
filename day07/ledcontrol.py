@@ -51,10 +51,6 @@ class WindowClass(QMainWindow, form_class):
         GPIO.output(self.green_pin, True)
         GPIO.output(self.blue_pin, False)
 
-    def closeEvent(self, event):
-        GPIO.cleanup()
-        event.accept()
-
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     myWindow = WindowClass()
