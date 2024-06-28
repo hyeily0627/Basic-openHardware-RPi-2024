@@ -5,12 +5,10 @@ import RPi.GPIO as GPIO
 
 form_class = uic.loadUiType("./ledcontrol.ui")[0]
 
-         # GPIO 핀 번호 설정
-         self.red_pin = 19
-         self.green_pin = 13
-         self.blue_pin = 6
-
-
+# GPIO 핀 번호 설정
+self.red_pin = 19
+self.green_pin = 13
+self.blue_pin = 6
 
 class WindowClass(QMainWindow, form_class):
     def __init__(self):
