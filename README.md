@@ -346,4 +346,4 @@ https://github.com/hyeily0627/Basic-openHardware-RPi-2024/assets/156732476/39380
 
 - Qutty 사용 
   - vncserver-virtual로 vnc 서버 접속
-  - sudo apt install qttools5-dev-tools : Qt 도구 설치 
+  - sudo apt install qttools5-dev-tools : Qt 도구 설치 (한번만)
