@@ -14,7 +14,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="btnOn">
+   <widget class="QPushButton" name="Btn_ON">
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -27,7 +27,7 @@
      <string>LED ON</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="btnOff">
+   <widget class="QPushButton" name="Btn_OFF">
     <property name="geometry">
      <rect>
       <x>160</x>
@@ -98,7 +98,7 @@
  <resources/>
  <connections>
   <connection>
-   <sender>btnOn</sender>
+   <sender>Btn_ON</sender>
    <signal>clicked()</signal>
    <receiver>MainWindow</receiver>
    <slot>btnOn()</slot>
@@ -114,7 +114,7 @@
    </hints>
   </connection>
   <connection>
-   <sender>btnOff</sender>
+   <sender>Btn_OFF</sender>
    <signal>clicked()</signal>
    <receiver>MainWindow</receiver>
    <slot>btnOff()</slot>
